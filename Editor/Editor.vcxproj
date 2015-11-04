@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E082474-D501-439E-A68D-2E53E54FCE9F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Editor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\Win32\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\Unused\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)\geCore;$(SolutionDir)\Externals\SDL2\include;$(SolutionDir)\Externals\SDL2_image\include;$(SolutionDir)\Externals\SDL2_gfx\include;$(SolutionDir)\Externals\TinyXml;$(SolutionDir)\Externals\AntTweakBar\include;$(SolutionDir)\Externals\Lua\include;$(SolutionDir)\Externals\tolua\include;$(SolutionDir)\Externals\Viewback\server;$(SolutionDir)\Externals\Pthreads_Win32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\$(Platform);$(SolutionDir)\Externals\SDL2\lib\x86;$(SolutionDir)\Externals\SDL2_image\lib\x86;$(SolutionDir)\Externals\SDL2_gfx\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)Intermediate\Unused\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)\geCore;$(SolutionDir)\Externals\SDL2\include;$(SolutionDir)\Externals\SDL2_image\include;$(SolutionDir)\Externals\SDL2_gfx\include;$(SolutionDir)\Externals\TinyXml;$(SolutionDir)\Externals\AntTweakBar\include;$(SolutionDir)\Externals\Lua\include;$(SolutionDir)\Externals\tolua\include;$(SolutionDir)\Externals\Viewback\server;$(SolutionDir)\Externals\Pthreads_Win32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\$(Platform);$(SolutionDir)\Externals\SDL2\lib\x64;$(SolutionDir)\Externals\SDL2_image\lib\x64;$(SolutionDir)\Externals\SDL2_gfx\lib\x64;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\Win64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\Win32\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\Unused\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)\geCore;$(SolutionDir)\Externals\SDL2\include;$(SolutionDir)\Externals\SDL2_image\include;$(SolutionDir)\Externals\SDL2_gfx\include;$(SolutionDir)\Externals\TinyXml;$(SolutionDir)\Externals\AntTweakBar\include;$(SolutionDir)\Externals\Lua\include;$(SolutionDir)\Externals\tolua\include;$(SolutionDir)\Externals\Viewback\server;$(SolutionDir)\Externals\Pthreads_Win32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\x86;$(SolutionDir)\Externals\SDL2\lib\x86;$(SolutionDir)\Externals\SDL2_image\lib\x86;$(SolutionDir)\Externals\SDL2_gfx\lib\x86;$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)Intermediate\Unused\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)\geCore;$(SolutionDir)\Externals\SDL2\include;$(SolutionDir)\Externals\SDL2_image\include;$(SolutionDir)\Externals\SDL2_gfx\include;$(SolutionDir)\Externals\TinyXml;$(SolutionDir)\Externals\AntTweakBar\include;$(SolutionDir)\Externals\Lua\include;$(SolutionDir)\Externals\tolua\include;$(SolutionDir)\Externals\Viewback\server;$(SolutionDir)\Externals\Pthreads_Win32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\$(Platform);$(SolutionDir)\Externals\SDL2\lib\x64;$(SolutionDir)\Externals\SDL2_image\lib\x64;$(SolutionDir)\Externals\SDL2_gfx\lib\x64;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\Win64\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;TW_STATIC;PTW32_STATIC_LIB;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <UseMSVC>false</UseMSVC>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\BuildLogs\$(Configuration)\$(Platform)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;TW_STATIC;PTW32_STATIC_LIB;_WIN64;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <UseMSVC>false</UseMSVC>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\BuildLogs\$(Configuration)\$(Platform)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;TW_STATIC;PTW32_STATIC_LIB;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\BuildLogs\$(Configuration)\$(Platform)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;TW_STATIC;PTW32_STATIC_LIB;_WIN64;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <BuildLog>
+      <Path>$(SolutionDir)Intermediate\BuildLogs\$(Configuration)\$(Platform)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="geBreadthFirstSearchMapGridWalker.h" />
+    <ClInclude Include="geGUI.h" />
+    <ClInclude Include="geGUIObject.h" />
+    <ClInclude Include="geMapGridWalker.h" />
+    <ClInclude Include="geMapTileNode.h" />
+    <ClInclude Include="geTexture.h" />
+    <ClInclude Include="geTiledMap.h" />
+    <ClInclude Include="geWorld.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Editor.cpp" />
+    <ClCompile Include="geBreadthFirstSearchMapGridWalker.cpp" />
+    <ClCompile Include="geGUI.cpp" />
+    <ClCompile Include="geGUIObject.cpp" />
+    <ClCompile Include="geMapGridWalker.cpp" />
+    <ClCompile Include="geMapTileNode.cpp" />
+    <ClCompile Include="geTexture.cpp" />
+    <ClCompile Include="geTiledMap.cpp" />
+    <ClCompile Include="geWorld.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

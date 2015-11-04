@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Debugging">
+      <UniqueIdentifier>{5d47143b-eb1f-4ccc-8b81-8305fd9314c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{c5f81710-fb94-4f7d-a044-c7654100af2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platforms">
+      <UniqueIdentifier>{f17fae32-635a-4470-9cae-1d37fa27358b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platforms\Windows">
+      <UniqueIdentifier>{5a1d08f7-7b56-4ac4-b3cf-69577c21c394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platforms\GenericPlatform">
+      <UniqueIdentifier>{77f13e86-5901-4639-9f42-b729aef4913a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Muticore">
+      <UniqueIdentifier>{d2531a69-c0e3-4be4-ae0f-fe344c90e86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{3cc8764b-1c16-41c9-a02c-3937f8bedde4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainLoop">
+      <UniqueIdentifier>{797d50e2-a580-4f22-8043-3bd89fd1ec6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Containers">
+      <UniqueIdentifier>{5b9eedc5-cba7-4486-a710-a90e5cf1c0c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debugging\Viewback">
+      <UniqueIdentifier>{cd3f02a9-8164-4273-bb7e-51cf7ad88739}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Platforms\Windows\MinWindows.h">
+      <Filter>Source Files\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Multicore\CriticalSection.h">
+      <Filter>Source Files\Muticore</Filter>
+    </ClInclude>
+    <ClInclude Include="Platforms\GenericPlatform\GenericPlatform.h">
+      <Filter>Source Files\Platforms\GenericPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugging\geLogger.h">
+      <Filter>Source Files\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="geCoreStd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\PlatformMath.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\PlatformTypes.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\String.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Mainloop\Initialization.h">
+      <Filter>Source Files\MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\geVector2D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\BasicTypes.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\MiscDefines.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\geFloat32.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\geFloat16.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugging\MemoryDump.h">
+      <Filter>Source Files\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\geColor.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\geVector3D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\geVector4D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\geFloat16Color.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Array.h">
+      <Filter>Source Files\Containers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Debugging\geLogger.cpp">
+      <Filter>Source Files\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\String.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="geCoreStd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\PlatformMath.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Mainloop\Initialization.cpp">
+      <Filter>Source Files\MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\geVector2D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Debugging\viewback_util.cpp">
+      <Filter>Source Files\Debugging\Viewback</Filter>
+    </ClCompile>
+    <ClCompile Include="Debugging\viewback.cpp">
+      <Filter>Source Files\Debugging\Viewback</Filter>
+    </ClCompile>
+    <ClCompile Include="Debugging\MemoryDump.cpp">
+      <Filter>Source Files\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\geColor.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

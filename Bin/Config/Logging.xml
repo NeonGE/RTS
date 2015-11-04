@@ -1,0 +1,6 @@
+<Logging>
+  <Log tag="geCore" debugger="1" file="1"/>
+  <Log tag="Editor" debugger="1" file="1"/>
+  <Log tag="geWorld" debugger="1" file="1"/>
+  <Log tag="geTiledMap" debugger="1" file="0"/>
+</Logging>
